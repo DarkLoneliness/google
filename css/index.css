@@ -149,7 +149,7 @@ main section{
     cursor: pointer;
 }
 
-main section button{
+.main-buttons button {
     height: 36px;
     font-size: 14px;
     min-width: 54px;
@@ -165,7 +165,7 @@ main section button{
     text-align: center;
 }
 
-main section button:hover{
+.main-buttons button:hover{
     box-shadow: 0 1px 1px rgba(0,0,0,.1);
     background-color: #f8f9fa;
     border: 1px solid #dadce0;
@@ -173,6 +173,7 @@ main section button:hover{
 }
 
 main p{
+    margin-bottom: 25px;
     font-size: 13px;
     color: #4d5156;
     padding-top: 5px;
@@ -229,3 +230,83 @@ footer section{
     text-decoration: underline;
 }
 
+@media (max-width: 872px){
+
+    footer section{
+        flex-direction: column;
+    }
+
+    .menuFooter{
+        justify-content: center;
+    }   
+}
+
+@media (max-width: 632px) {
+    .main-input{
+        width: 570px;
+    }
+}
+
+@media (max-width: 624px) {
+    .main-input{
+        width: 560px;
+    }
+}
+
+@media (max-width: 604px) {
+    .main-input{
+        width: 500px;
+    }
+}
+
+@media (max-width: 546px) {
+    .main-input{
+        width: 480px;
+    }
+
+    .menuFooter{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 508px) {
+    .main-input{
+        width: 440px;
+    }
+
+    .menuFooter{
+        justify-content: left;
+    }
+}
+
+@media (max-width: 450px) {
+    .main-input{
+        width: 380px;
+    }
+
+    .main-input > svg{
+        display: none;
+    }
+
+    .main-input input{
+        width: 300px;  
+    }    
+}
+
+@media (max-width: 392px) {
+    .main-input{
+        width: 300px;
+    }
+
+    .main-input input{
+        margin: 0;
+        width: 200px;
+    } 
+}
+
+@media (max-width: 330px) {
+    .main-buttons{
+        flex-direction: column;
+    }
+}
